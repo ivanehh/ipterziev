@@ -28,6 +28,7 @@ jobs:
       - name: deploy_to_render
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
-          service-id: ${{secrets.RENDER_SVC_ID}}
-          api-key: ${{secrets.RENDER_API_KEY}}
+          api-key: ${{ secrets.RENDER_API_KEY }}
+          service-id: ${{ secrets.RENDER_SVC_ID }}
+          
     
