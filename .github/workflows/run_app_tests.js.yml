@@ -21,6 +21,7 @@ jobs:
 
     steps:
     - name: terzivan
+      run: cd boardgames
     - name: install_deps
       run: npm install
     - name: run_ui_tests
