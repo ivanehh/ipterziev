@@ -24,7 +24,7 @@ jobs:
     - name: install_playwright
       run: npx playwright install --with-deps
     - name: run_ui_tests
-      run: npm run test:ui
+      run: npm run start & npm run test:ui
   deploy_app:
     needs: run_tests
     runs-on: ubuntu-latest
