@@ -22,7 +22,14 @@ jobs:
     steps:
     - name: ipterziev
       run: echo ipterziev
+    - name: checkout_repo
+      uses: action/checkout@v4
+    - name: Use Node.js 20
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+        cache: npm
     - name: install_deps
-      run: cd ../boardgames; npm install
+      run: npm install
     - name: run_ui_tests
       run: npm run test:ui
