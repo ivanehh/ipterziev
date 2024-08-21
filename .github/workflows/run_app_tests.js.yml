@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: ipterziev
-      run: ls /home/runner/work/ipterziev/ipterziev
+      run: ls
     - name: checkout_repo
       uses: actions/checkout@v4
     - name: Use Node.js 20
