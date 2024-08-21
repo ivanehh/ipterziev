@@ -7,6 +7,19 @@ on:
     branches: [ "main" ]
 
 jobs:
+  run_app:
+     runs-on: ubuntu-latest
+     steps:
+     - name: ipterziev
+       run: ls
+     - name: checkout_repo
+       uses: actions/checkout@v4
+     - name: Use Node.js 20
+       uses: actions/setup-node@v3    
+     - name: install_deps
+       run: npm install
+     - name: run_app
+       run: npm run start
   run_tests:
     runs-on: ubuntu-latest
     steps:
