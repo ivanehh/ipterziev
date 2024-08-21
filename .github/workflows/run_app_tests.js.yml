@@ -21,5 +21,7 @@ jobs:
         cache: npm
     - name: install_deps
       run: npm install
+    - name: update playwright
+      run: npm playwright install
     - name: run_ui_tests
       run: npm run test:ui
