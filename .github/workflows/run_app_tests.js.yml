@@ -23,7 +23,7 @@ jobs:
     - name: ipterziev
       run: echo ipterziev
     - name: checkout_repo
-      uses: action/checkout@v4
+      uses: actions/checkout@v4
     - name: Use Node.js 20
       uses: actions/setup-node@v3
       with:
