@@ -23,6 +23,6 @@ jobs:
     - name: ipterziev
       run: echo ipterziev
     - name: install_deps
-      run: npm install
+      run: cd ../boardgames; npm install
     - name: run_ui_tests
       run: npm run test:ui
